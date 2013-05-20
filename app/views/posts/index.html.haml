@@ -3,5 +3,4 @@
     %li
       %p= link_to p.title, post_path(p.id)
       %p= p.tags.join(', ')
-      -# %p= HTML_Truncator.truncate(markdown(p.content), 30).html_safe
       %p= p.truncated_content
