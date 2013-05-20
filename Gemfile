@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'activeadmin', '0.6.0'
 
 group :production do
   gem 'pg'
@@ -15,6 +16,7 @@ end
 
 group :development do
   gem 'annotate'
+  gem 'better_errors'
 end
 
 group :test do

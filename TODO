@@ -1,8 +1,3 @@
-admin articles > titre, contenu
-
-page accueil > liste articles > voir article
-
-tags
 
 markdown
 
@@ -10,6 +5,10 @@ code source
 
 more
 
+sidebar
+
 images
 
-sidebar
+recherche par tag
+
+nuage de tag
