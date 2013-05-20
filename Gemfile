@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'activeadmin', '0.6.0'
 gem 'redcarpet'
+gem "html_truncator", '~>0.2'
 
 group :production do
   gem 'pg'
