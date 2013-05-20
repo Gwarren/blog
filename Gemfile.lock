@@ -150,6 +150,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    redcarpet (2.2.2)
     responders (0.9.3)
       railties (~> 3.1)
     rspec (2.8.0)
@@ -211,6 +212,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.13)
+  redcarpet
   rspec-rails (= 2.8.1)
   sass-rails (~> 3.2.3)
   sqlite3

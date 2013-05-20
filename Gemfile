@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'activeadmin', '0.6.0'
+gem 'redcarpet'
 
 group :production do
   gem 'pg'
