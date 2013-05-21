@@ -1,6 +1,5 @@
-%ul
-  - @posts.each do |p|
-    %li
-      %p= link_to p.title, post_path(p.id)
-      %p= p.tags.join(', ')
-      %p= p.truncated_content
+- @posts.each do |p|
+  .teaser
+    %h1.beta= link_to p.title, post_path(p.id)
+    .tags= p.labeled_tags
+    %p= p.truncated_content
