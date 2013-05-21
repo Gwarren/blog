@@ -1,6 +1,8 @@
 .sidebar
   %h1.gamma= link_to "lkdjiin's blog", root_path
-  %div Articles about my work as a freelance web developper
-  %div= link_to 'about', '#'
-  %div= link_to '@lkdjiin', 'https://twitter.com/lkdjiin', target: "_blank"
+  = link_to image_tag('pen75.png'), root_path
+  %div.sidebar-about Articles about my work as a freelance web developper
+  %div.sidebar-link= link_to 'about', '#'
+  %div.sidebar-link
+    = link_to '@lkdjiin', 'https://twitter.com/lkdjiin', target: "_blank"
 

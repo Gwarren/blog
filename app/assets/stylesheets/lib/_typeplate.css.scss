@@ -37,19 +37,19 @@ $font-size: 112.5; // percentage value (16 * 112.5% = 18px)
 $font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
 $measure: $font-base * $line-height;
 $font-family: serif;
-$font-family-sans: sans-serif;
+$font-family-sans: 'Inconsolata', sans-serif;
 $font-properties: $weight, $line-height, $font-size, $font-family;
 
 //the serif boolean var can be redeclared from another stylesheet. However
 //the var must be placed after your @import "typeplate.scss";
-$serif-boolean: true !default;
+$serif-boolean: false !default;
 
 
 // $Color
 // -------------------------------------//
 
-$body-copy-color: #444;
-$heading-color: #222;
+$body-copy-color: $color-7;
+$heading-color: $color-7;
 
 
 // $Ampersand @font-face

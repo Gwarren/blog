@@ -1,6 +1,7 @@
-%h1.tag= "All <span>#{@tag.label}</span> posts".html_safe
+%h1.tag-page= "All <span class='label'>#{@tag.label}</span> posts".html_safe
 
 - @posts.each do |p|
-  %h2= link_to p.title, post_path(p.id)
-  .date= l p.created_at, format: "%Y %B %e"
-  .tags= labeled_tags(p.tags)
+  %article.tag
+    %h2.gamma= link_to p.title, post_path(p.id)
+    .post-date= l p.created_at, format: "%Y %B %e"
+    .post-tags= labeled_tags(p.tags)

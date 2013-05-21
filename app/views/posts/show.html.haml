@@ -1,5 +1,7 @@
-%h1= @post.title
-.date= l @post.created_at, format: "%Y %B %e"
-%p= markdown(@post.content)
-.tags= labeled_tags(@post.tags)
+.post
+  %h1= @post.title
+  .post-date= l @post.created_at, format: "%Y %B %e"
+  = markdown(@post.content)
+  .post-tags= labeled_tags(@post.tags)
 
+= render "shared/top_page"
