@@ -1,5 +1,6 @@
 - @posts.each do |p|
   .teaser
     %h1.beta= link_to p.title, post_path(p.id)
+    .date= l p.created_at, format: "%Y %B %e"
     .tags= p.labeled_tags
     %p= p.truncated_content

@@ -1,3 +1,4 @@
 %h1= @post.title
+.date= l @post.created_at, format: "%Y %B %e"
 %p= markdown(@post.content)
 .tags= @post.labeled_tags

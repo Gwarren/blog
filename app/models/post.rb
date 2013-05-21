@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)
+#  content    :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Post < ActiveRecord::Base
   include MarkdownHelper
   attr_accessible :content, :title, :tag_ids
@@ -20,4 +31,5 @@ class Post < ActiveRecord::Base
   def labeled_tags
     tags.map{|t| "<span class='label'>#{t.label}</span>"}.join(' ').html_safe
   end
+
 end
