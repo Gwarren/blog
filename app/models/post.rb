@@ -25,11 +25,4 @@ class Post < ActiveRecord::Base
     HTML_Truncator.truncate(markdown(content), 30).html_safe
   end
 
-  # Public: Get the tags of this post ready to be display in html.
-  #
-  # Returns a html formatted String.
-  def labeled_tags
-    tags.map{|t| "<span class='label'>#{t.label}</span>"}.join(' ').html_safe
-  end
-
 end

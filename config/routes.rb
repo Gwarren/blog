@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+
+  resources :tags, only: [:show]
   resources :posts, only: [:index, :show]
   root :to => 'posts#index'
 
