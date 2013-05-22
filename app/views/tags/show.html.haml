@@ -1,5 +1,6 @@
 - provide(:description, "All lkdjiin's post about #{@tag.label}")
 - provide(:keywords, "blog, posts, lkdjiin, list, subject, #{@tag.label}")
+- provide(:title, "Articles about #{@tag.label}")
 %h1.tag-page= "All <span class='label'>#{@tag.label}</span> posts".html_safe
 
 - @posts.each do |p|

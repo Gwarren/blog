@@ -1,5 +1,6 @@
 - provide(:description, @post.description)
 - provide(:keywords, @post.tags.join(','))
+- provide(:title, @post.title)
 .post
   %h1= @post.title
   .post-date= l @post.created_at, format: "%Y %B %e"
