@@ -1,8 +1,8 @@
 - @posts.each do |p|
   .teaser
-    %h1.beta= link_to p.title, post_path(p.id)
+    %h1.beta= link_to p.title, post_path(p)
     .post-date= l p.created_at, format: "%Y %B %e"
     .post-tags= labeled_tags(p.tags)
-    = p.truncated_content
+    = p.truncated_content link_to("Read this post", post_path(p))
 
 = render "shared/top_page"
