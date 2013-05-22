@@ -1,8 +1,9 @@
 Blog::Application.routes.draw do
 
+  root :to => 'posts#index'
   resources :tags, only: [:show]
   resources :posts, only: [:index, :show]
-  root :to => 'posts#index'
+  match "/about", to: "pages#about"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
