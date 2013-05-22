@@ -21,11 +21,11 @@ class Post < ActiveRecord::Base
   # html tags.
   #
   # Returns a String, the truncated post content.
-  def truncated_content link
+  def truncated_content link = ""
     HTML_Truncator.truncate(
       markdown(content),
       30,
-      ellipsis: "... #{link}"
+      ellipsis: link.blank? ? "..." : "... #{link}"
     ).html_safe
   end
 
