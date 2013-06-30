@@ -1,0 +1,8 @@
+:threeshold: 100
+:directories:
+- app
+- lib
+:excludes:
+- spec
+- config/initializers
+- app/admin

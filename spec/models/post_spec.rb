@@ -41,4 +41,10 @@ describe Post do
     it { should_not be_valid }
   end
 
+  describe "#truncated_content" do
+    before { @post.content = "abc " * 100 }
+    specify do
+      @post.truncated_content.should == "<p>" + ("abc " * 29) + "abc...</p>"
+    end
+  end
 end
