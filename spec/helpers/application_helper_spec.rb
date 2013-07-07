@@ -12,7 +12,7 @@ describe ApplicationHelper do
     end
 
     it "should not include a hyphen for the home page" do
-      full_title("").should_not =~ /-/
+      full_title("").should =~ /Confessions/
     end
   end
 end
