@@ -19,6 +19,10 @@ class Post < ActiveRecord::Base
   validates :description, length: { maximum: 255 }
   validates :content, presence: true
 
+  def to_param
+    "#{id}-#{title.parameterize}"
+  end
+
   # Public: Get the 30 first words of the post's content, taking care of
   # html tags.
   #
