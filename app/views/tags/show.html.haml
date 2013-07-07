@@ -1,10 +1,10 @@
-- provide(:description, "All lkdjiin's post about #{@tag.label}")
-- provide(:keywords, "blog, posts, lkdjiin, list, subject, #{@tag.label}")
-- provide(:title, "Articles about #{@tag.label}")
-%h1.tag-page= "All <span class='label'>#{@tag.label}</span> posts".html_safe
+- provide(:description, "Mes articles à propos de #{@tag.label}")
+- provide(:keywords, "blog, article, lkdjiin, liste, sujet, xavier nayrac, #{@tag.label}")
+- provide(:title, "Articles pour #{@tag.label}")
+%h1.tag-page= "Articles pour <span class='label'>#{@tag.label}</span>".html_safe
 
 - @posts.each do |p|
   %article.tag
     %h2.gamma= link_to p.title, post_path(p.id)
-    .post-date= l p.created_at, format: "%Y %B %e"
+    .post-date= l p.created_at, format: "%e %B %Y"
     .post-tags= labeled_tags(p.tags)

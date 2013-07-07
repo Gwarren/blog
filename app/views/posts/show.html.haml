@@ -3,7 +3,7 @@
 - provide(:title, @post.title)
 .post
   %h1= @post.title
-  .post-date= l @post.created_at, format: "%Y %B %e"
+  .post-date= l @post.created_at, format: "%e %B %Y"
   = markdown(@post.content)
   .post-tags= labeled_tags(@post.tags)
 

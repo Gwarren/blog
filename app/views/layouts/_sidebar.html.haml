@@ -1,8 +1,10 @@
 .sidebar
   %h1.gamma= link_to "lkdjiin's blog", root_path
   = link_to image_tag('pen75.png'), root_path
-  %div.sidebar-about Articles about my work as a freelance web developper
-  %div.sidebar-link= link_to 'about', about_path
+  %div.sidebar-about
+    Articles sur mon travail d'entrepreneur et de développeur du Web et
+    d'ailleurs.
+  %div.sidebar-link= link_to 'qui suis-je ?', about_path
   %div.sidebar-link
     = link_to '@lkdjiin', 'https://twitter.com/lkdjiin', target: "_blank"
   %div.sidebar-link= link_to 'rss', posts_path(format: :rss)
