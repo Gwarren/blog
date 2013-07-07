@@ -13,4 +13,8 @@ class Tag < ActiveRecord::Base
   validates :label, presence: true, length: { maximum: 40 }
 
   def to_s ; label ; end
+
+  def to_param
+    "#{id}-#{label.parameterize}"
+  end
 end
